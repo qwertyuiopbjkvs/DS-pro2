@@ -7,6 +7,7 @@ def get_area_list():
     response = requests.get(url)
     return response.json()
 
+
 # 選択した地域の天気予報を取得する関数
 def get_weather_forecast(area_code):
     url = f"https://www.jma.go.jp/bosai/forecast/data/forecast/{area_code}.json"
